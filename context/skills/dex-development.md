@@ -54,10 +54,10 @@ Files can have platform variants:
 ## Template Variables
 
 Context files support Jinja2 templating:
-- `{{ context.root }}` - Component install directory (relative to project root)
+{% raw %}- `{{ context.root }}` - Component install directory (relative to project root)
 - `{{ env.project.root }}` - User's project path (absolute)
 - `{{ agent.name }}` - Current AI agent (e.g., `claude-code`)
-- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata
+- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata{% endraw %}
 
 ## Development Tools
 

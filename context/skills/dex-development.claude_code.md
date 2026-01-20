@@ -58,9 +58,9 @@ This plugin provides the following slash commands:
 ## Template Variables
 
 Context files support Jinja2:
-- `{{ context.root }}` - Component install directory (relative to project root)
+{% raw %}- `{{ context.root }}` - Component install directory (relative to project root)
 - `{{ env.project.root }}` - User's project path (absolute)
-- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata
+- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata{% endraw %}
 
 ## Development Workflow
 
@@ -97,5 +97,5 @@ python "{{ context.root }}scripts/dex_upstream.py" add owner/base-plugin
 1. **Use commands**: Prefer `/dex-*` commands for common operations
 2. **Validate early**: Check structure before building
 3. **Platform variants**: Use `.claude_code.md` suffix for Claude-specific content
-4. **Script paths**: Quote paths with `{{ context.root }}` for spaces
+4. **Script paths**: Quote paths with {% raw %}`{{ context.root }}`{% endraw %} for spaces
 5. **Test locally**: Always test with `dex add ./` before publishing

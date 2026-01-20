@@ -58,9 +58,9 @@ This plugin provides instructions for dex plugin development tasks:
 ## Template Variables
 
 Context files support Jinja2:
-- `{{ context.root }}` - Component install directory (relative to project root)
+{% raw %}- `{{ context.root }}` - Component install directory (relative to project root)
 - `{{ env.project.root }}` - User's project path (absolute)
-- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata
+- `{{ plugin.name }}`, `{{ plugin.version }}` - Plugin metadata{% endraw %}
 
 ## Development Workflow
 

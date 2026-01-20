@@ -7,19 +7,19 @@ A development toolkit for building, packaging, and publishing dex plugins.
 From GitHub:
 
 ```bash
-uvx --from git+https://github.com/launchcg/dex dex install --source git+https://github.com/launchcg/dex-plugin.git
+uvx --from git+https://github.com/LaunchCG/dex dex install --source git+https://github.com/LaunchCG/dex-plugin.git
 ```
 
 Or from local path during development:
 
 ```bash
-uvx --from git+https://github.com/launchcg/dex dex install --source /path/to/dex-plugin
+uvx --from git+https://github.com/LaunchCG/dex dex install --source /path/to/dex-plugin
 ```
 
 To add to your project's `dex.yaml` and persist the dependency:
 
 ```bash
-uvx --from git+https://github.com/launchcg/dex dex install --source git+https://github.com/launchcg/dex-plugin.git --save
+uvx --from git+https://github.com/LaunchCG/dex dex install --source git+https://github.com/LaunchCG/dex-plugin.git --save
 ```
 
 ## What's Included

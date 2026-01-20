@@ -4,6 +4,7 @@ Dex context files support Jinja2 templating. The following variables are availab
 
 ## Context Variables
 
+{% raw %}
 ### `{{ context.root }}`
 Installation directory for the component, relative to the project root. Includes trailing slash.
 
@@ -89,6 +90,7 @@ On macOS, you can also use `pbcopy` for clipboard operations.
 ```markdown
 {% include '_partials/common-setup.md' %}
 ```
+{% endraw %}
 
 ## Notes
 
@@ -96,4 +98,4 @@ On macOS, you can also use `pbcopy` for clipboard operations.
 - Template variables are resolved at install time
 - Use quotes around paths that might contain spaces
 - Partials in `_partials/` are not installed as standalone files
-- `context.root` is relative to project root; combine with `env.project.root` for absolute path
+{% raw %}- `context.root` is relative to project root; combine with `env.project.root` for absolute path{% endraw %}
