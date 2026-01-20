@@ -1,0 +1,76 @@
+{
+  "name": "dex-plugin",
+  "version": "1.0.0",
+  "description": "Development toolkit for building, packaging, and publishing dex plugins",
+  "repository": "https://github.com/launchcg/dex-plugin",
+  "author": "",
+  "license": "MIT",
+  "skills": [
+    {
+      "name": "dex-development",
+      "description": "Context for dex plugin development assistance",
+      "context": "context/skills/dex-development.md",
+      "files": [
+        "scripts/dex_init.py",
+        "scripts/dex_validate.py",
+        "scripts/dex_build.py",
+        "scripts/dex_publish.py",
+        "scripts/dex_upstream.py"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "dex-init",
+      "description": "Scaffold a new dex plugin project",
+      "context": "context/commands/dex-init.md"
+    },
+    {
+      "name": "dex-validate",
+      "description": "Validate plugin structure and package.json",
+      "context": "context/commands/dex-validate.md"
+    },
+    {
+      "name": "dex-build",
+      "description": "Build a distributable package",
+      "context": "context/commands/dex-build.md"
+    },
+    {
+      "name": "dex-publish",
+      "description": "Publish to GitHub or local registry",
+      "context": "context/commands/dex-publish.md"
+    },
+    {
+      "name": "dex-upstream",
+      "description": "Manage upstream dependencies",
+      "context": "context/commands/dex-upstream.md"
+    }
+  ],
+  "instructions": [
+    {
+      "name": "dex-init",
+      "description": "Scaffold a new dex plugin project",
+      "context": "context/instructions/dex-init.md"
+    },
+    {
+      "name": "dex-validate",
+      "description": "Validate plugin structure and package.json",
+      "context": "context/instructions/dex-validate.md"
+    },
+    {
+      "name": "dex-build",
+      "description": "Build a distributable package",
+      "context": "context/instructions/dex-build.md"
+    },
+    {
+      "name": "dex-publish",
+      "description": "Publish to GitHub or local registry",
+      "context": "context/instructions/dex-publish.md"
+    },
+    {
+      "name": "dex-upstream",
+      "description": "Manage upstream dependencies",
+      "context": "context/instructions/dex-upstream.md"
+    }
+  ]
+}
