@@ -1,0 +1,30 @@
+# Code Review
+
+Use the {{ .tool }} tool to examine the code.
+
+{{ if eq .Platform "claude-code" }}
+Use the Read and Grep tools to analyze files. You can also use Glob to find relevant files.
+{{ else if eq .Platform "github-copilot" }}
+Use fetch and search tools to analyze files.
+{{ else if eq .Platform "cursor" }}
+Use read_file to analyze files.
+{{ end }}
+
+## Review Process
+
+1. Read and understand the code
+2. Check for bugs and edge cases
+3. Look for security vulnerabilities
+4. Evaluate performance
+5. Assess maintainability
+6. Provide constructive feedback
+
+## What to Check
+
+- Correctness: Does the code work as intended?
+- Security: Are there any security issues?
+- Performance: Can this be more efficient?
+- Maintainability: Is the code clear and well-organized?
+- Testing: Is there adequate test coverage?
+
+Provide specific, actionable feedback with examples.
